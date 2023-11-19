@@ -1,0 +1,166 @@
+.home{
+    /* background-color: burlywood; */
+    width: 100%
+}
+.slider{
+    width: 99%;
+    margin: auto;
+}
+.slide{
+    width: 100%;
+    height: 33rem;
+}
+.slide>img{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.content{
+    position: absolute;
+    /* background-color: red; */
+    top: 10px;
+    /* left: 14px; */
+    z-index: 100;
+    /* color: white; */
+    width: 70rem;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+}
+.content>h1{
+    color: white;
+    font-size: 2.8rem;
+}
+
+/* department */
+.department{
+    /* background-color: red; */
+    width: 88%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    text-align: left;
+}
+.department-heading{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10px;
+}
+.department-heading h1{
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.department-heading>a{
+    padding: 15px 24px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+.department-heading h1 span{
+    font-weight: 400;
+    color: orangered;
+}
+.para{
+    /* background:red; */
+    width: 60%;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 3rem 1rem;
+}
+.cards{
+    /* background-color: aquamarine; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 16rem;
+    height: 21rem;
+    /* background: blue; */
+    position: relative;
+    padding: 15px;
+    margin: 1rem;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    transition: all 0.6s;
+}
+.card>h1{
+    font-size: 9rem;
+    color: gray;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: all 0.6s;
+}
+.card>img{
+    margin: 1.4rem 0.5rem;
+}
+.card>h4{
+    margin: 1rem 0rem;
+    font-weight: 400;
+}
+.card>p{
+    padding: 1rem 0;
+}
+.card>a{
+    margin: 1rem 0;
+    color: black;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.card>a:hover{
+    color: orangered;
+}
+.card>hr{
+    height: 10px;
+    width: 93%;
+    margin: 0 auto;
+    background-color: orange;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    transition: all linear 0.7s;
+}
+.card:hover hr{
+    top: 0;
+    scale: 1.08;
+}
+.card:hover h1{
+    color: orange;
+}
+.card:hover{
+box-shadow: 5px 5px 10px 0 gray;
+}
+
+/* responsive dsign */
+@media (max-width:700px){
+    .card>h1{
+        font-size: 4rem;
+    }
+    .content{
+        width: 15%;
+    }
+    .content>h1{
+        font-size: 2rem;
+    }
+    .para{
+        width: 100%;
+    }
+    .department-heading h1{
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    .department-heading>a{
+        width: 7rem;
+        padding: 12px 15px;
+    }
+}
